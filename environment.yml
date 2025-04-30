@@ -1,0 +1,17 @@
+name: depression_risk_analysis
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - xgboost
+  - jupyter
+  - pip
+  - pip:
+      - lightgbm
+      - imbalanced-learn
