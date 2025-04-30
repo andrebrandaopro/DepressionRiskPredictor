@@ -10,6 +10,7 @@ dependencies:
   - seaborn
   - scikit-learn
   - xgboost
+  - ydata-profiling
   - jupyter
   - pip
   - pip:
