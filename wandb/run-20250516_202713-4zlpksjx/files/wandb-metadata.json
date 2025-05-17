@@ -1,0 +1,29 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.9.21",
+  "startedAt": "2025-05-16T23:27:14.106224Z",
+  "program": "<python with no main file>",
+  "git": {
+    "remote": "https://github.com/andrebrandaopro/DepressionRiskPredictor.git",
+    "commit": "c6672e0d3c52742ecc16f61e5f80612f1569497b"
+  },
+  "email": "andre.brandao.067@ufrn.br",
+  "root": "C:\\Users\\Usuario\\Documents\\Mestrado\\ML\\DepressionRiskPredictor",
+  "host": "DESKTOP-7N48GDA",
+  "executable": "C:\\Users\\Usuario\\.conda\\envs\\depression_risk_analysis\\python.exe",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "disk": {
+    "/": {
+      "total": "249195765760",
+      "used": "238674116608"
+    }
+  },
+  "memory": {
+    "total": "7915925504"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  }
+}

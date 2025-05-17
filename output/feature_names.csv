@@ -1,0 +1,694 @@
+feature_name
+id
+Age
+Academic Pressure
+Work Pressure
+CGPA
+Study Satisfaction
+Job Satisfaction
+Work/Study Hours
+Financial Stress
+Name_A.Ed
+Name_Aadhya
+Name_Aahana
+Name_Aakash
+Name_Aam
+Name_Aan
+Name_Aanchal
+Name_Aanket
+Name_Aanya
+Name_Aaradhya
+Name_Aarand
+Name_Aarani
+Name_Aaransh
+Name_Aaranya
+Name_Aarash
+Name_Aarat
+Name_Aarav
+Name_Aariket
+Name_Aariv
+Name_Aarla
+Name_Aarohi
+Name_Aarsh
+Name_Aarsush
+Name_Aarti
+Name_Aarun
+Name_Aarush
+Name_Aarvi
+Name_Aarya
+Name_Aavya
+Name_Abarav
+Name_Abhinav
+Name_Abhishek
+Name_Adachi
+Name_Aditi
+Name_Aditya
+Name_Adiya
+Name_Advait
+Name_Aieter
+Name_Aikash
+Name_Aisha
+Name_Aishwarya
+Name_Aiya
+Name_Amit
+Name_Anahk
+Name_Anakash
+Name_Anand
+Name_Anariv
+Name_Anarush
+Name_Anaya
+Name_Anh
+Name_Anhil
+Name_Anika
+Name_Aniket
+Name_Anirudh
+Name_Anish
+Name_Anisha
+Name_Anishi
+Name_Aniv
+Name_Anjali
+Name_Anjun
+Name_Anohi
+Name_Ansh
+Name_Anushka
+Name_Anvi
+Name_Anya
+Name_Apoorva
+Name_Arav
+Name_Ariti
+Name_Arjun
+Name_Armaan
+Name_Arnav
+Name_Arya
+Name_Aryan
+Name_Asha
+Name_Atharv
+Name_Avni
+Name_Ayaan
+Name_Ayansh
+Name_Ayash
+Name_Ayhan
+Name_Ayoub
+Name_Ayush
+Name_Ayut
+Name_BE
+Name_Barkha
+Name_Bhavesh
+Name_Bhavna
+Name_Charvi
+Name_Chhavi
+Name_Chirag
+Name_Chrinda
+Name_Damini
+Name_Darsh
+Name_Deepak
+Name_Dev
+Name_Dhruv
+Name_Divya
+Name_Diya
+Name_Eirini
+Name_Eisha
+Name_Esha
+Name_Eshita
+Name_Gagan
+Name_Garima
+Name_Gaurav
+Name_Gauri
+Name_Gavrachi
+Name_Golkut
+Name_Harini
+Name_Harsh
+Name_Harsha
+Name_Harshand
+Name_Harshaun
+Name_Harshav
+Name_Harshil
+Name_Harshir
+Name_Haurav
+Name_Himani
+Name_Hra
+Name_Hreya
+Name_Hrithik
+Name_Ijra
+Name_Ila
+Name_Ira
+Name_Irit
+Name_Isha
+Name_Ishaam
+Name_Ishaan
+Name_Ishaani
+Name_Ishan
+Name_Ishita
+Name_Ishlok
+Name_Ishma
+Name_Ishwar
+Name_Ivaan
+Name_Jai
+Name_Jaish
+Name_Janvi
+Name_Jasmine
+Name_Jathesh
+Name_Jhaan
+Name_Jhanvi
+Name_Jhav
+Name_Jiya
+Name_Jush
+Name_K. Kavya
+Name_K.Pharm
+Name_Kabir
+Name_Kalyan
+Name_Kani
+Name_Kanika
+Name_Kanisha
+Name_Karishma
+Name_Kartal
+Name_Kartik
+Name_Kartika
+Name_Kartikeya
+Name_Kashish
+Name_Kavya
+Name_Keshav
+Name_Khushi
+Name_Kian
+Name_Kiara
+Name_Kike
+Name_Kiran
+Name_Kolkata
+Name_Krey
+Name_Krishna
+Name_Kriti
+Name_Kunal
+Name_Kupa
+Name_Kush
+Name_Lakshay
+Name_Lata
+Name_Lavanya
+Name_Leela
+Name_M.Com
+Name_M.Tech
+Name_Mahav
+Name_Mahi
+Name_Mahika
+Name_Mahir
+Name_Manan
+Name_Manik
+Name_Manvi
+Name_Mayank
+Name_Meera
+Name_Mihir
+Name_Mira
+Name_Mithila
+Name_Monika
+Name_Mukund
+Name_Naina
+Name_Nakul
+Name_Nalini
+Name_Naly
+Name_Nanchal
+Name_Nandini
+Name_Nanya
+Name_Navya
+Name_Neha
+Name_Neil
+Name_Nhanini
+Name_Nhanvi
+Name_Nikhil
+Name_Niki
+Name_Nikita
+Name_Nirvaan
+Name_Nisha
+Name_Nishant
+Name_Nishi
+Name_Nishita
+Name_Nya
+Name_Om
+Name_Palak
+Name_Pallavi
+Name_Parha
+Name_Pari
+Name_Pariv
+Name_Parth
+Name_Parvi
+Name_Parvik
+Name_Patna
+Name_Pihu
+Name_Plumber
+Name_Pooja
+Name_Prachi
+Name_Pradhya
+Name_Pranav
+Name_Prandini
+Name_Prarav
+Name_Pratham
+Name_Pratyush
+Name_Prayat
+Name_Prilak
+Name_Prisha
+Name_Prishti
+Name_R.Com
+Name_Radhika
+Name_Raghav
+Name_Raghavendra
+Name_Raghavik
+Name_Raghavvi
+Name_Rahil
+Name_Rai
+Name_Rajankot
+Name_Rajat
+Name_Rajveer
+Name_Rajya
+Name_Randik
+Name_Rani
+Name_Ranveer
+Name_Rashi
+Name_Raunak
+Name_Reyansh
+Name_Rhea
+Name_Rhesh
+Name_Rietal
+Name_Rietvik
+Name_Rika
+Name_Rishi
+Name_Ritak
+Name_Ritik
+Name_Ritika
+Name_Ritvik
+Name_Rivaan
+Name_Riya
+Name_Rohan
+Name_Rohik
+Name_Ronnie
+Name_Rudegrav
+Name_Rudra
+Name_Rudransh
+Name_Rudrey
+Name_Rudrithik
+Name_Rupa
+Name_Rupadhya
+Name_Rupai
+Name_Rupak
+Name_Rupal
+Name_Rupar
+Name_Rupat
+Name_Rupika
+Name_Rupil
+Name_Ryouvik
+Name_Saanvi
+Name_Sai
+Name_Samaira
+Name_Samar
+Name_Sanjeev
+Name_Sanket
+Name_Sansh
+Name_Sanya
+Name_Sara
+Name_Satyam
+Name_Saurav
+Name_Shaina
+Name_Shanaya
+Name_Sharth
+Name_Shashi
+Name_Shaurya
+Name_Shir
+Name_Shiv
+Name_Shivak
+Name_Shivam
+Name_Shivan
+Name_Shivansh
+Name_Shivar
+Name_Shivivaam
+Name_Shivna
+Name_Shivsh
+Name_Shivvi
+Name_Shlok
+Name_Shrey
+Name_Shreya
+Name_Shruti
+Name_Siddh
+Name_Siddharth
+Name_Siddhesh
+Name_Siddhi
+Name_Simran
+Name_Sneha
+Name_Soham
+Name_Srinagar
+Name_Srishti
+Name_Suhani
+Name_Tanak
+Name_Tani
+Name_Tanisha
+Name_Tanmay
+Name_Tanvi
+Name_Tanya
+Name_Tara
+Name_Tarsh
+Name_Tejas
+Name_Thane
+Name_Tina
+Name_Tinmay
+Name_Tohar
+Name_Trisha
+Name_Tushar
+Name_UX/UI Designer
+Name_Utkarsh
+Name_Vaanya
+Name_Vaishnavi
+Name_Vani
+Name_Vanya
+Name_Varanasi
+Name_Varun
+Name_Vasai-Virar
+Name_Vashi
+Name_Vavya
+Name_Veda
+Name_Vedant
+Name_Vhaani
+Name_Vibha
+Name_Vidha
+Name_Vidhi
+Name_Vidra
+Name_Vidvi
+Name_Vidya
+Name_Vihaan
+Name_Vika
+Name_Vikram
+Name_Virar
+Name_Virat
+Name_Vita
+Name_Vivaan
+Name_Vivan
+Name_Vlaan
+Name_Vohi
+Name_Vrinda
+Name_Yamini
+Name_Yash
+Name_Yashvi
+Name_Yogesh
+Name_Yurav
+Name_Yuvraj
+Name_Zara
+Name_Zegmay
+Name_Zoya
+Gender_Male
+City_Aaradhya
+City_Aditya
+City_Agra
+City_Ahmedabad
+City_Aishwarya
+City_Anvi
+City_Armaan
+City_Atharv
+City_Ayansh
+City_Ayush
+City_Bangalore
+City_Bhavna
+City_Bhopal
+City_Chennai
+City_Chhavi
+City_City
+City_Delhi
+City_Faridabad
+City_Galesabad
+City_Gaurav
+City_Ghaziabad
+City_Gurgaon
+City_Harsha
+City_Hyderabad
+City_Indore
+City_Itheg
+City_Ivaan
+City_Jaipur
+City_Jhanvi
+City_Kagan
+City_Kalyan
+City_Kanpur
+City_Kashish
+City_Kashk
+City_Keshav
+City_Khaziabad
+City_Khushi
+City_Kibara
+City_Kolkata
+City_Krinda
+City_Less Delhi
+City_Less than 5 Kalyan
+City_Lucknow
+City_Ludhiana
+City_M.Com
+City_MCA
+City_ME
+City_Mahi
+City_Malyansh
+City_Meerut
+City_Mihir
+City_Mira
+City_Molkata
+City_Moreadhyay
+City_Morena
+City_Mumbai
+City_Nagpur
+City_Nalini
+City_Nalyan
+City_Nandini
+City_Nashik
+City_Patna
+City_Pratyush
+City_Pune
+City_Raghavendra
+City_Rajkot
+City_Rashi
+City_Researcher
+City_Reyansh
+City_Saanvi
+City_Srinagar
+City_Surat
+City_Thane
+City_Tolkata
+City_Tushar
+City_Unirar
+City_Vaanya
+City_Vadodara
+City_Varanasi
+City_Vasai-Virar
+City_Vidhi
+City_Vidya
+City_Visakhapatnam
+Working Professional or Student_Working Professional
+Profession_Accountant
+Profession_Analyst
+Profession_Architect
+Profession_B.Com
+Profession_BBA
+Profession_BCA
+Profession_BE
+Profession_Business Analyst
+Profession_Chef
+Profession_Chemist
+Profession_City Manager
+Profession_Civil Engineer
+Profession_Consultant
+Profession_Content Writer
+Profession_Customer Support
+Profession_Data Scientist
+Profession_Dev
+Profession_Digital Marketer
+Profession_Doctor
+Profession_Educational Consultant
+Profession_Electrician
+Profession_Entrepreneur
+Profession_Family Consultant
+Profession_FamilyVirar
+Profession_Finanancial Analyst
+Profession_Financial Analyst
+Profession_Graphic Designer
+Profession_HR Manager
+Profession_Investment Banker
+Profession_Judge
+Profession_LLM
+Profession_Lawyer
+Profession_M.Ed
+Profession_MBA
+Profession_MBBS
+Profession_Manager
+Profession_Marketing Manager
+Profession_Mechanical Engineer
+Profession_Medical Doctor
+Profession_Moderate
+Profession_Nagpur
+Profession_Patna
+Profession_PhD
+Profession_Pharmacist
+Profession_Pilot
+Profession_Plumber
+Profession_Pranav
+Profession_Profession
+Profession_Research Analyst
+Profession_Researcher
+Profession_Sales Executive
+Profession_Software Engineer
+Profession_Student
+Profession_Teacher
+Profession_Travel Consultant
+Profession_UX/UI Designer
+Profession_Unemployed
+Profession_Unveil
+Profession_Working Professional
+Profession_Yogesh
+Profession_Yuvraj
+Sleep Duration_1-3 hours
+Sleep Duration_1-6 hours
+Sleep Duration_10-11 hours
+Sleep Duration_2-3 hours
+Sleep Duration_3-4 hours
+Sleep Duration_3-6 hours
+Sleep Duration_4-5 hours
+Sleep Duration_4-6 hours
+Sleep Duration_40-45 hours
+Sleep Duration_45
+Sleep Duration_45-48 hours
+Sleep Duration_49 hours
+Sleep Duration_5-6 hours
+Sleep Duration_6-7 hours
+Sleep Duration_6-8 hours
+Sleep Duration_7-8 hours
+Sleep Duration_8 hours
+Sleep Duration_8-9 hours
+Sleep Duration_9-11 hours
+Sleep Duration_9-5 hours
+Sleep Duration_9-6 hours
+Sleep Duration_Indore
+Sleep Duration_Less than 5 hours
+Sleep Duration_Moderate
+Sleep Duration_More than 8 hours
+Sleep Duration_No
+Sleep Duration_Pune
+Sleep Duration_Sleep_Duration
+Sleep Duration_Unhealthy
+Sleep Duration_Work_Study_Hours
+Sleep Duration_than 5 hours
+Dietary Habits_3
+Dietary Habits_BSc
+Dietary Habits_Electrician
+Dietary Habits_Gender
+Dietary Habits_Healthy
+Dietary Habits_Hormonal
+Dietary Habits_Less Healthy
+Dietary Habits_Less than Healthy
+Dietary Habits_Male
+Dietary Habits_Mihir
+Dietary Habits_Moderate
+Dietary Habits_More Healthy
+Dietary Habits_No
+Dietary Habits_No Healthy
+Dietary Habits_Unhealthy
+Dietary Habits_Vegas
+Dietary Habits_Yes
+Degree_20
+Degree_24
+Degree_5.56
+Degree_5.61
+Degree_7.06
+Degree_8.56
+Degree_ACA
+Degree_Aarav
+Degree_Advait
+Degree_B
+Degree_B B.Com
+Degree_B BA
+Degree_B.03
+Degree_B.3.79
+Degree_B.Arch
+Degree_B.B.Arch
+Degree_B.Com
+Degree_B.Ed
+Degree_B.Pharm
+Degree_B.Sc
+Degree_B.Student
+Degree_B.Tech
+Degree_BA
+Degree_BArch
+Degree_BB
+Degree_BBA
+Degree_BCA
+Degree_BE
+Degree_BEd
+Degree_BH
+Degree_BHM
+Degree_BPA
+Degree_BPharm
+Degree_BSc
+Degree_Badhya
+Degree_Bhavesh
+Degree_Bhopal
+Degree_Brit
+Degree_Brithika
+Degree_Business Analyst
+Degree_CGPA
+Degree_Class 12
+Degree_Data Scientist
+Degree_Degree
+Degree_Doctor
+Degree_E.Tech
+Degree_Entrepreneur
+Degree_HCA
+Degree_HR Manager
+Degree_H_Pharm
+Degree_Jhanvi
+Degree_Kalyan
+Degree_L.Ed
+Degree_LCA
+Degree_LHM
+Degree_LL B.Ed
+Degree_LL.Com
+Degree_LLB
+Degree_LLBA
+Degree_LLCom
+Degree_LLEd
+Degree_LLM
+Degree_LLS
+Degree_LLTech
+Degree_Lata
+Degree_M
+Degree_M. Business Analyst
+Degree_M.Arch
+Degree_M.Com
+Degree_M.Ed
+Degree_M.Pharm
+Degree_M.S
+Degree_M.Tech
+Degree_MA
+Degree_MBA
+Degree_MBBS
+Degree_MCA
+Degree_MD
+Degree_ME
+Degree_MEd
+Degree_MHM
+Degree_MPA
+Degree_MPharm
+Degree_MSc
+Degree_MTech
+Degree_M_Tech
+Degree_Mahika
+Degree_Marsh
+Degree_Mthanya
+Degree_N.Pharm
+Degree_Nalini
+Degree_P.Com
+Degree_P.Pharm
+Degree_PhD
+Degree_Pihu
+Degree_Plumber
+Degree_RCA
+Degree_Ritik
+Degree_S.Arch
+Degree_S.Pharm
+Degree_S.Tech
+Degree_UX/UI Designer
+Degree_Unite
+Degree_Veda
+Degree_Vivaan
+Degree_Vrinda
+Degree_Working Professional
+Have you ever had suicidal thoughts ?_Yes
+Family History of Mental Illness_Yes

@@ -1,0 +1,417 @@
+
+==================================================
+1. CARREGAMENTO DE DADOS
+==================================================
+Shape do dataset: (140700, 20)
+
+Primeiras linhas do dataset:
+   id      Name  Gender   Age           City Working Professional or Student  \
+0   0  Aaradhya  Female  49.0       Ludhiana            Working Professional
+1   1     Vivan    Male  26.0       Varanasi            Working Professional
+2   2    Yuvraj    Male  33.0  Visakhapatnam                         Student
+3   3    Yuvraj    Male  22.0         Mumbai            Working Professional
+4   4      Rhea  Female  30.0         Kanpur            Working Professional
+
+         Profession  Academic Pressure  Work Pressure  CGPA  \
+0              Chef                NaN            5.0   NaN
+1           Teacher                NaN            4.0   NaN
+2               NaN                5.0            NaN  8.97
+3           Teacher                NaN            5.0   NaN
+4  Business Analyst                NaN            1.0   NaN
+
+   Study Satisfaction  Job Satisfaction     Sleep Duration Dietary Habits  \
+0                 NaN               2.0  More than 8 hours        Healthy
+1                 NaN               3.0  Less than 5 hours      Unhealthy
+2                 2.0               NaN          5-6 hours        Healthy
+3                 NaN               1.0  Less than 5 hours       Moderate
+4                 NaN               1.0          5-6 hours      Unhealthy
+
+    Degree Have you ever had suicidal thoughts ?  Work/Study Hours  \
+0      BHM                                    No               1.0
+1      LLB                                   Yes               7.0
+2  B.Pharm                                   Yes               3.0
+3      BBA                                   Yes              10.0
+4      BBA                                   Yes               9.0
+
+   Financial Stress Family History of Mental Illness  Depression
+0               2.0                               No           0
+1               3.0                               No           1
+2               1.0                               No           1
+3               1.0                              Yes           1
+4               4.0                              Yes           0
+
+Informações do dataset:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 140700 entries, 0 to 140699
+Data columns (total 20 columns):
+ #   Column                                 Non-Null Count   Dtype
+---  ------                                 --------------   -----
+ 0   id                                     140700 non-null  int64
+ 1   Name                                   140700 non-null  object
+ 2   Gender                                 140700 non-null  object
+ 3   Age                                    140700 non-null  float64
+ 4   City                                   140700 non-null  object
+ 5   Working Professional or Student        140700 non-null  object
+ 6   Profession                             104070 non-null  object
+ 7   Academic Pressure                      27897 non-null   float64
+ 8   Work Pressure                          112782 non-null  float64
+ 9   CGPA                                   27898 non-null   float64
+ 10  Study Satisfaction                     27897 non-null   float64
+ 11  Job Satisfaction                       112790 non-null  float64
+ 12  Sleep Duration                         140700 non-null  object
+ 13  Dietary Habits                         140696 non-null  object
+ 14  Degree                                 140698 non-null  object
+ 15  Have you ever had suicidal thoughts ?  140700 non-null  object
+ 16  Work/Study Hours                       140700 non-null  float64
+ 17  Financial Stress                       140696 non-null  float64
+ 18  Family History of Mental Illness       140700 non-null  object
+ 19  Depression                             140700 non-null  int64
+dtypes: float64(8), int64(2), object(10)
+memory usage: 21.5+ MB
+None
+
+Estatísticas descritivas:
+                  id            Age  Academic Pressure  Work Pressure  \
+count  140700.000000  140700.000000       27897.000000  112782.000000
+mean    70349.500000      40.388621           3.142273       2.998998
+std     40616.735775      12.384099           1.380457       1.405771
+min         0.000000      18.000000           1.000000       1.000000
+25%     35174.750000      29.000000           2.000000       2.000000
+50%     70349.500000      42.000000           3.000000       3.000000
+75%    105524.250000      51.000000           4.000000       4.000000
+max    140699.000000      60.000000           5.000000       5.000000
+
+               CGPA  Study Satisfaction  Job Satisfaction  Work/Study Hours  \
+count  27898.000000        27897.000000     112790.000000     140700.000000
+mean       7.658636            2.944940          2.974404          6.252679
+std        1.464466            1.360197          1.416078          3.853615
+min        5.030000            1.000000          1.000000          0.000000
+25%        6.290000            2.000000          2.000000          3.000000
+50%        7.770000            3.000000          3.000000          6.000000
+75%        8.920000            4.000000          4.000000         10.000000
+max       10.000000            5.000000          5.000000         12.000000
+
+       Financial Stress     Depression
+count     140696.000000  140700.000000
+mean           2.988983       0.181713
+std            1.413633       0.385609
+min            1.000000       0.000000
+25%            2.000000       0.000000
+50%            3.000000       0.000000
+75%            4.000000       0.000000
+max            5.000000       1.000000
+
+==================================================
+2. VISUALIZAÇÃO INICIAL
+==================================================
+
+Distribuição da variável alvo:
+Shape do dataset: (140700, 20)
+
+Primeiras linhas do dataset:
+   id      Name  Gender   Age           City Working Professional or Student  \
+0   0  Aaradhya  Female  49.0       Ludhiana            Working Professional
+1   1     Vivan    Male  26.0       Varanasi            Working Professional
+2   2    Yuvraj    Male  33.0  Visakhapatnam                         Student
+3   3    Yuvraj    Male  22.0         Mumbai            Working Professional
+4   4      Rhea  Female  30.0         Kanpur            Working Professional
+
+         Profession  Academic Pressure  Work Pressure  CGPA  \
+0              Chef                NaN            5.0   NaN
+1           Teacher                NaN            4.0   NaN
+2               NaN                5.0            NaN  8.97
+3           Teacher                NaN            5.0   NaN
+4  Business Analyst                NaN            1.0   NaN
+
+   Study Satisfaction  Job Satisfaction     Sleep Duration Dietary Habits  \
+0                 NaN               2.0  More than 8 hours        Healthy
+1                 NaN               3.0  Less than 5 hours      Unhealthy
+2                 2.0               NaN          5-6 hours        Healthy
+3                 NaN               1.0  Less than 5 hours       Moderate
+4                 NaN               1.0          5-6 hours      Unhealthy
+
+    Degree Have you ever had suicidal thoughts ?  Work/Study Hours  \
+0      BHM                                    No               1.0
+1      LLB                                   Yes               7.0
+2  B.Pharm                                   Yes               3.0
+3      BBA                                   Yes              10.0
+4      BBA                                   Yes               9.0
+
+   Financial Stress Family History of Mental Illness  Depression
+0               2.0                               No           0
+1               3.0                               No           1
+2               1.0                               No           1
+3               1.0                              Yes           1
+4               4.0                              Yes           0
+
+Informações do dataset:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 140700 entries, 0 to 140699
+Data columns (total 20 columns):
+ #   Column                                 Non-Null Count   Dtype
+---  ------                                 --------------   -----
+ 0   id                                     140700 non-null  int64
+ 1   Name                                   140700 non-null  object
+ 2   Gender                                 140700 non-null  object
+ 3   Age                                    140700 non-null  float64
+ 4   City                                   140700 non-null  object
+ 5   Working Professional or Student        140700 non-null  object
+ 6   Profession                             104070 non-null  object
+ 7   Academic Pressure                      27897 non-null   float64
+ 8   Work Pressure                          112782 non-null  float64
+ 9   CGPA                                   27898 non-null   float64
+ 10  Study Satisfaction                     27897 non-null   float64
+ 11  Job Satisfaction                       112790 non-null  float64
+ 12  Sleep Duration                         140700 non-null  object
+ 13  Dietary Habits                         140696 non-null  object
+ 14  Degree                                 140698 non-null  object
+ 15  Have you ever had suicidal thoughts ?  140700 non-null  object
+ 16  Work/Study Hours                       140700 non-null  float64
+ 17  Financial Stress                       140696 non-null  float64
+ 18  Family History of Mental Illness       140700 non-null  object
+ 19  Depression                             140700 non-null  int64
+dtypes: float64(8), int64(2), object(10)
+memory usage: 21.5+ MB
+None
+
+Estatísticas descritivas:
+                  id            Age  Academic Pressure  Work Pressure  \
+count  140700.000000  140700.000000       27897.000000  112782.000000
+mean    70349.500000      40.388621           3.142273       2.998998
+std     40616.735775      12.384099           1.380457       1.405771
+min         0.000000      18.000000           1.000000       1.000000
+25%     35174.750000      29.000000           2.000000       2.000000
+50%     70349.500000      42.000000           3.000000       3.000000
+75%    105524.250000      51.000000           4.000000       4.000000
+max    140699.000000      60.000000           5.000000       5.000000
+
+               CGPA  Study Satisfaction  Job Satisfaction  Work/Study Hours  \
+count  27898.000000        27897.000000     112790.000000     140700.000000
+mean       7.658636            2.944940          2.974404          6.252679
+std        1.464466            1.360197          1.416078          3.853615
+min        5.030000            1.000000          1.000000          0.000000
+25%        6.290000            2.000000          2.000000          3.000000
+50%        7.770000            3.000000          3.000000          6.000000
+75%        8.920000            4.000000          4.000000         10.000000
+max       10.000000            5.000000          5.000000         12.000000
+
+       Financial Stress     Depression
+count     140696.000000  140700.000000
+mean           2.988983       0.181713
+std            1.413633       0.385609
+min            1.000000       0.000000
+25%            2.000000       0.000000
+50%            3.000000       0.000000
+75%            4.000000       0.000000
+max            5.000000       1.000000
+
+==================================================
+2. VISUALIZAÇÃO INICIAL
+==================================================
+
+Distribuição da variável alvo:
+Depression
+0    115133
+1     25567
+Name: count, dtype: int64
+2025-05-16 20:32:56,021 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-05-16 20:32:56,113 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-05-16 20:34:16,648 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+C:\Users\Usuario\AppData\Local\Temp\ipykernel_19300\2746687083.py:2: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  ax = sns.countplot(x=df["Depression"], palette="viridis")
+2025-05-16 20:34:16,778 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+Distribuição da variável Depression:
+Classe 0: 115133 exemplos (81.83%)
+Classe 1: 25567 exemplos (18.17%)
+
+Valores ausentes por coluna:
+Profession             36630
+Academic Pressure     112803
+Work Pressure          27918
+CGPA                  112802
+Study Satisfaction    112803
+Job Satisfaction       27910
+Dietary Habits             4
+Degree                     2
+Financial Stress           4
+dtype: int64
+
+==================================================
+3. PRÉ-PROCESSAMENTO
+==================================================
+
+Tratando valores ausentes...
+C:\Users\Usuario\AppData\Local\Temp\ipykernel_19300\1057137409.py:14: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df[col].fillna(df[col].mode()[0], inplace=True)
+  - Preenchidos valores ausentes na coluna 'Profession' com a moda
+C:\Users\Usuario\AppData\Local\Temp\ipykernel_19300\1057137409.py:11: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df[col].fillna(df[col].mean(), inplace=True)
+  - Preenchidos valores ausentes na coluna 'Academic Pressure' com a média
+  - Preenchidos valores ausentes na coluna 'Work Pressure' com a média
+  - Preenchidos valores ausentes na coluna 'CGPA' com a média
+  - Preenchidos valores ausentes na coluna 'Study Satisfaction' com a média
+  - Preenchidos valores ausentes na coluna 'Job Satisfaction' com a média
+  - Preenchidos valores ausentes na coluna 'Dietary Habits' com a moda
+  - Preenchidos valores ausentes na coluna 'Degree' com a moda
+  - Preenchidos valores ausentes na coluna 'Financial Stress' com a média
+
+X shape: (140700, 19)
+y shape: (140700,)
+X_train shape: (112560, 19)
+X_test shape: (28140, 19)
+
+==================================================
+4. FEATURE ENGINEERING
+==================================================
+2025-05-16 20:39:38,947 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-05-16 20:39:39,016 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+
+Distribuição da variável Depression:
+Classe 0: 115133 exemplos (81.83%)
+Classe 1: 25567 exemplos (18.17%)
+
+Valores ausentes por coluna:
+Series([], dtype: int64)
+
+X shape: (140700, 19)
+y shape: (140700,)
+X_train shape: (112560, 19)
+X_test shape: (28140, 19)
+
+==================================================
+4. FEATURE ENGINEERING
+==================================================
+
+Colunas categóricas identificadas (10):
+  - Name: 382 valores únicos
+  - Gender: 2 valores únicos
+  - City: 84 valores únicos
+  - Working Professional or Student: 2 valores únicos
+  - Profession: 62 valores únicos
+  - Sleep Duration: 32 valores únicos
+  - Dietary Habits: 18 valores únicos
+  - Degree: 108 valores únicos
+  - Have you ever had suicidal thoughts ?: 2 valores únicos
+  - Family History of Mental Illness: 2 valores únicos
+C:\Users\Usuario\.conda\envs\depression_risk_analysis\lib\site-packages\sklearn\preprocessing\_encoders.py:246: UserWarning: Found unknown categories in columns [0, 2, 4, 5, 6, 7] during transform. These unknown categories will be encoded as all zeros
+  warnings.warn(
+C:\Users\Usuario\.conda\envs\depression_risk_analysis\lib\site-packages\sklearn\preprocessing\_encoders.py:246: UserWarning: Found unknown categories in columns [0, 2, 4, 5, 6, 7] during transform. These unknown categories will be encoded as all zeros
+  warnings.warn(
+
+Nenhuma coluna categórica encontrada.
+
+Aplicando normalização com StandardScaler...
+
+==================================================
+5. TREINAMENTO DO MODELO
+==================================================
+Train dataset: 112560 amostras
+Test dataset: 28140 amostras
+Usando dispositivo: cpu
+Estrutura do modelo:
+DepressionModel(
+  (layer1): Linear(in_features=693, out_features=128, bias=True)
+  (act1): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (layer2): Linear(in_features=128, out_features=2, bias=True)
+)
+Época 1/50, Treino Loss: 0.1831, Val Loss: 0.1641, Acurácia: 0.9362
+Época 2/50, Treino Loss: 0.1629, Val Loss: 0.1654, Acurácia: 0.9354
+Época 3/50, Treino Loss: 0.1595, Val Loss: 0.1706, Acurácia: 0.9347
+Época 4/50, Treino Loss: 0.1613, Val Loss: 0.1750, Acurácia: 0.9355
+Época 5/50, Treino Loss: 0.1582, Val Loss: 0.1951, Acurácia: 0.9364
+Época 6/50, Treino Loss: 0.1570, Val Loss: 0.1878, Acurácia: 0.9376
+Época 7/50, Treino Loss: 0.1621, Val Loss: 0.2015, Acurácia: 0.9364
+Época 8/50, Treino Loss: 0.1595, Val Loss: 0.2014, Acurácia: 0.9351
+Época 9/50, Treino Loss: 0.1615, Val Loss: 0.2397, Acurácia: 0.9345
+Época 10/50, Treino Loss: 0.1688, Val Loss: 0.2469, Acurácia: 0.9332
+Época 11/50, Treino Loss: 0.1513, Val Loss: 0.2477, Acurácia: 0.9321
+Época 12/50, Treino Loss: 0.1530, Val Loss: 0.2704, Acurácia: 0.9341
+Época 13/50, Treino Loss: 0.1518, Val Loss: 0.2949, Acurácia: 0.9329
+Época 14/50, Treino Loss: 0.1667, Val Loss: 0.3135, Acurácia: 0.9327
+Época 15/50, Treino Loss: 0.1524, Val Loss: 0.3482, Acurácia: 0.9329
+Época 16/50, Treino Loss: 0.1568, Val Loss: 0.3218, Acurácia: 0.9316
+Época 17/50, Treino Loss: 0.1697, Val Loss: 0.3510, Acurácia: 0.9311
+Época 18/50, Treino Loss: 0.1497, Val Loss: 0.3742, Acurácia: 0.9299
+Época 19/50, Treino Loss: 0.1537, Val Loss: 0.3778, Acurácia: 0.9329
+Época 20/50, Treino Loss: 0.1505, Val Loss: 0.4375, Acurácia: 0.9313
+Época 21/50, Treino Loss: 0.1671, Val Loss: 0.4363, Acurácia: 0.9310
+Época 22/50, Treino Loss: 0.1523, Val Loss: 0.5252, Acurácia: 0.9314
+Época 23/50, Treino Loss: 0.1757, Val Loss: 0.4333, Acurácia: 0.9311
+Época 24/50, Treino Loss: 0.1465, Val Loss: 0.5031, Acurácia: 0.9305
+Época 25/50, Treino Loss: 0.1462, Val Loss: 0.5000, Acurácia: 0.9307
+Época 26/50, Treino Loss: 0.1450, Val Loss: 0.5204, Acurácia: 0.9309
+Época 27/50, Treino Loss: 0.1548, Val Loss: 0.5182, Acurácia: 0.9304
+Época 28/50, Treino Loss: 0.1648, Val Loss: 0.5931, Acurácia: 0.9304
+Época 29/50, Treino Loss: 0.1500, Val Loss: 0.5643, Acurácia: 0.9294
+Época 30/50, Treino Loss: 0.1577, Val Loss: 0.5827, Acurácia: 0.9300
+Época 31/50, Treino Loss: 0.1545, Val Loss: 0.5590, Acurácia: 0.9305
+Época 32/50, Treino Loss: 0.1557, Val Loss: 0.6487, Acurácia: 0.9296
+Época 33/50, Treino Loss: 0.1731, Val Loss: 0.6787, Acurácia: 0.9306
+Época 34/50, Treino Loss: 0.1654, Val Loss: 0.5963, Acurácia: 0.9307
+Época 35/50, Treino Loss: 0.1956, Val Loss: 0.5986, Acurácia: 0.9280
+Época 36/50, Treino Loss: 0.1638, Val Loss: 0.6708, Acurácia: 0.9300
+Época 37/50, Treino Loss: 0.1450, Val Loss: 0.6616, Acurácia: 0.9295
+Época 38/50, Treino Loss: 0.1714, Val Loss: 0.7075, Acurácia: 0.9290
+Época 39/50, Treino Loss: 0.1679, Val Loss: 0.7619, Acurácia: 0.9302
+Época 40/50, Treino Loss: 0.1829, Val Loss: 0.7209, Acurácia: 0.9297
+Época 41/50, Treino Loss: 0.1569, Val Loss: 0.8470, Acurácia: 0.9297
+Época 42/50, Treino Loss: 0.1444, Val Loss: 0.7603, Acurácia: 0.9290
+Época 43/50, Treino Loss: 0.1747, Val Loss: 0.8291, Acurácia: 0.9295
+Época 44/50, Treino Loss: 0.1898, Val Loss: 0.8565, Acurácia: 0.9301
+Época 45/50, Treino Loss: 0.1445, Val Loss: 0.8559, Acurácia: 0.9295
+Época 46/50, Treino Loss: 0.1887, Val Loss: 0.8170, Acurácia: 0.9292
+Época 47/50, Treino Loss: 0.2071, Val Loss: 0.8556, Acurácia: 0.9298
+Época 48/50, Treino Loss: 0.1642, Val Loss: 0.7782, Acurácia: 0.9273
+Época 49/50, Treino Loss: 0.1839, Val Loss: 0.8513, Acurácia: 0.9295
+Época 50/50, Treino Loss: 0.2110, Val Loss: 0.9072, Acurácia: 0.9298
+
+==================================================
+6. AVALIAÇÃO DO MODELO
+==================================================
+
+Relatório de classificação:
+              precision    recall  f1-score   support
+
+           0       0.95      0.96      0.96     23027
+           1       0.82      0.79      0.80      5113
+
+    accuracy                           0.93     28140
+   macro avg       0.88      0.88      0.88     28140
+weighted avg       0.93      0.93      0.93     28140
+
+
+Accuracy: 0.9298
+Precision: 0.8155
+Recall: 0.7929
+F1 Score: 0.8040
+
+AUC-ROC: 0.9633
+
+AUC-ROC: 0.9633
+
+==================================================
+8. SALVANDO MODELO E ARTEFATOS
+==================================================
+Modelo salvo em output\model.pt
+Scaler salvo em output\scaler.joblib
+Nomes das features salvos em output\feature_names.csv
+Configuração salva em output\config.json
+
+==================================================
+TREINAMENTO FINALIZADO COM SUCESSO!
+==================================================
